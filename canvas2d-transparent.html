@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <h1>Transparent Canvas 2d</h1>
+  <p>There is a background car image behind the canvas. Canvas has the same size as the background. Blue rectangle is drawn on the canvas.</p>
+  <div style="background-image: url('hatchback.jpg'); background-size: contain; width: 600px; height: 400px;">
+    <canvas id="canvas" width="600" height="400"></canvas>
+  </div>
+
+  <script type="text/javascript">
+
+    function draw() {
+      const canvas = document.getElementById('canvas');
+      const ctx = canvas.getContext('2d');
+
+      const width = 160;
+      const height = 90;
+
+      // draw rect
+      ctx.fillStyle = '#0095DD';
+      ctx.fillRect(230, 210, width, height);
+    }
+    draw();
+  </script>
+</body>
+</html>
