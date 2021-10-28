@@ -1,0 +1,177 @@
+<html>  
+<head>
+<link href="https://abtsoftware.staging.wpengine.com/wp-content/themes/scichartv5/assets/styles/custom.css?ver=1.5.5" rel="stylesheet"/>
+<style type="text/css">
+.newHeaderContainer:before {
+  content: ' ';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.1;
+  background-image: url('https://abtsoftware-wpengine.netdna-ssl.com/wp-content/uploads/2021/10/WispyLinesTraceDark.svg');
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-size: cover;
+}
+.newHeaderContainer {
+  background: linear-gradient(165deg, rgba(65,183,73,1) 0%, rgba(51,51,51,1) 100%);
+  display: flex;
+  flex-direction: row;
+  height: 470px;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  font-family: Montserrat, Ubuntu, Arial, Tahoma, sans-serif;
+}
+.newHeaderLeftCol {
+  margin: auto;
+  flex-basis: 50%;
+  padding-right: 20px;
+  z-index: 10;
+}
+.newHeaderLeftColContent {
+  max-width: 70%;
+  margin: auto;
+  color: #eee;
+}
+.newHeaderLeftColJsCharts {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.newHeaderLeftColJsCharts h1 {
+  display: inline-block;
+  margin-block: 0;
+  margin-right: 10px;
+  font-size: 70px;
+  font-weight: 700;
+  font-family: Montserrat;
+  color: #eee;
+}
+.newHeaderLeftColJsCharts span {
+  white-space: nowrap;
+}
+.newHeaderLeftColText {
+  font-size: 18px;
+line-height: 24px;
+}
+.newHeaderLeftColButtons {
+  width: max-content;
+  margin-top: 20px;
+}
+.newHeaderLeftColButtons a {
+  top: auto !important;
+  display: inline-block;
+  margin-bottom: 20px;
+  text-decoration: none;
+  position: relative;
+  top: 30px;
+  background-color: rgb(45, 181, 54);
+  font-size: 18px;
+  color: rgb(255,255,255);
+  padding: 12px 35px;
+}
+.newHeaderRightCol {
+  flex-basis: 50%;
+  z-index: 1;
+  margin: auto;
+}
+.newHeaderRightCol img {
+  max-width: 100%;
+}
+@media only screen and (max-width: 1024px) {
+  .newHeaderLeftColJsCharts h1 {
+    font-size: 50px;
+  }
+  .newHeaderLeftColJsCharts img {
+    width: 36px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .newHeaderContainer:before {
+    display: none;
+  }
+  .newHeaderContainer {
+    flex-direction: column;
+    height: initial;
+  }
+  .newHeaderLeftCol {
+    flex-basis: 50%;
+    padding-right: 0;
+  }
+  .newHeaderLeftColContent {
+    max-width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .newHeaderLeftColJsCharts h1 {
+    font-size: 36px;
+  }
+  .newHeaderLeftColButtons a {
+    display: block;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  .newHeaderRightCol {
+    max-height: 500px;
+    overflow: hidden;
+  }
+}
+</style>
+</head>
+<body>
+<div class="newHeaderContainer">
+  <noscript>
+    <style>
+      [data-aos^=fade][data-aos^=fade] { opacity: 1.0 !IMPORTANT; }
+      [data-aos=fade-up] { transform: translateY(0px) !IMPORTANT; }
+      [data-aos=fade-left] { transform: translate(0px) !IMPORTANT; }
+      [data-aos=zoom-in] { transform: scale(1.0) !IMPORTANT; }
+      [data-aos^=zoom][data-aos^=zoom] { opacity: 1.0 !IMPORTANT; }
+    </style>
+  </noscript>
+  <div class="newHeaderLeftCol">
+    <div class="newHeaderLeftColContent">
+      <div class="newHeaderLeftColJsCharts">
+        <h1>JAVASCRIPT</h1>
+        <span>
+          <h1>CHARTS</h1>
+          <img src="https://abtsoftware-wpengine.netdna-ssl.com/wp-content/uploads/2021/10/scichart-js-v2-star.png">
+        </span>
+      </div>
+      <div class="newHeaderLeftColText">
+        <p data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">SciChart.js is a <strong>powerful</strong>, <strong>feature-rich</strong>, High Performance <strong>JavaScript chart library</strong>. Used in Business, Scientific, Medical, and Financial apps.</p>
+        <p data-aos="fade-up" data-aos-delay="700" data-aos-duration="1000">Using WebGL & WebAssembly and with <strong>40 2D & 3D Chart types</strong>, find out why our <strong>JavaScript Charts</strong> are rated 5-Stars!</p>
+      </div>
+      <div class="newHeaderLeftColButtons">
+        <a href="https://demo.scichart.com/" target="_blank" class="button">View Demo</a>
+        <a href="https://www.scichart.com/getting-started-scichart-js/" target="_blank" class="button button-highlight" tabindex="0"><strong>GET STARTED</strong></a>
+      </div>
+    </div>
+  </div>
+  <div class="newHeaderRightCol">
+    <div data-aos="fade-left" data-aos-delay="1000" data-aos-anchor="#slide-trigger-4"
+      data-aos-anchor-placement="top-bottom" class="testimonial-rotated-01">
+      <img alt="SciChart WPF Charts for Medical and Scientific Chart Applications" style="-ms-transform: rotate(-9deg); -webkit-transform: rotate(-9deg); transform: rotate(-9deg); box-shadow: 0px 0px 25px #00000077;"
+      src="https://www.scichart.com/wp-content/uploads/2021/10/scichart-js-v2-banner-1.jpg" />
+    </div>
+    <div data-aos="fade-left" data-aos-delay="1250" data-aos-anchor="#slide-trigger-4"
+      data-aos-anchor-placement="top-bottom" style="left: -50px; top: 0px; position:relative;">
+      <img alt="SciChart JavaScript Charts for ECG Medical Apps" style="-ms-transform: rotate(-9deg);
+      -webkit-transform: rotate(-9deg);
+      transform: rotate(-9deg); width: 350px; box-shadow: 0px 0px 25px #00000077;"
+      src="https://www.scichart.com/wp-content/uploads/2021/10/scichart-js-v2-banner-3.jpg" />
+    </div>
+    <div data-aos="fade-left" data-aos-delay="1500" data-aos-anchor="#slide-trigger-4"
+      data-aos-anchor-placement="top-bottom" class="testimonial-rotated-02" style="top: -430px;">
+      <img alt="SciChart JavaScript Charts for Scientific Research Applications" style="-ms-transform: rotate(-9deg);
+      -webkit-transform: rotate(-9deg);
+      transform: rotate(-9deg); box-shadow: 0px 0px 25px #00000077;"
+      src="https://www.scichart.com/wp-content/uploads/2021/10/scichart-js-v2-banner-2.jpg" />
+    </div>
+  </div>
+</div>
+</body>
+</html>
