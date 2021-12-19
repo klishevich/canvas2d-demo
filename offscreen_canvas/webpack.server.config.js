@@ -2,10 +2,10 @@ const path = require("path");
 const CopyPlugin = require("copy-webpack-plugin");
 
 module.exports = {
+  target: "node",
   mode: "production",
   entry: {
-    app: "./src/index.ts",
-    worker: "/src/worker.ts"
+    server: "/src/server.ts"
   },
   output: {
     filename: "[name].js",

@@ -3,7 +3,8 @@
     <meta charset="utf-8" />
     <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
     <title>Offscreen canvas with web worker sample project</title>
-    <script async type="text/javascript" src="bundle.js"></script>
+    <script async type="text/javascript" src="worker.js"></script>
+    <script async type="text/javascript" src="app.js"></script>
     <style>
       body {
         font-family: "Arial";
@@ -12,6 +13,8 @@
   </head>
   <body>
     <h1>Offscreen canvas with web worker sample project</h1>
-    <div id="hart-root" style="width: 800px; height: 600px"></div>
+    <div id="hart-root">
+      <canvas id="canvas" width="600" height="400"></canvas>
+    </div>
   </body>
 </html>
