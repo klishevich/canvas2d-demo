@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <h1>Path2D Canvas 2d</h1>
+  <div>
+    <canvas id="canvas" width="600" height="400"></canvas>
+  </div>
+  <div>
+    <canvas id="canvas2" width="600" height="400"></canvas>
+  </div>
+
+  <script type="text/javascript">
+    const canvas = document.getElementById('canvas');
+    const ctx = canvas.getContext('2d');
+
+    const path1 = new Path2D();
+    path1.rect(10, 10, 100,100);
+
+    const path2 = new Path2D(path1);
+    path2.moveTo(220, 60);
+    path2.arc(170, 60, 50, 0, 2 * Math.PI);
+
+    ctx.stroke(path2);
+  </script>
+  <script type="text/javascript">
+    const canvas2 = document.getElementById('canvas2');
+    const ctx2 = canvas2.getContext('2d');
+
+    const p2 = new Path2D('M10 10 h 80 v 80 h -80 Z');
+    ctx2.fill(p2);
+  </script>
+</body>
+</html>

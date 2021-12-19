@@ -22,7 +22,7 @@
   flex-direction: row;
   height: 470px;
   width: 100%;
-  overflow: hidden;
+  overflow: visible;
   position: relative;
   font-family: Montserrat, Ubuntu, Arial, Tahoma, sans-serif;
 }
@@ -90,6 +90,9 @@ line-height: 24px;
   }
 }
 @media only screen and (max-width: 768px) {
+  .nuHeaderPage .section_wrapper {
+   width: 100% !IMPORTANT;
+  }
   .newHeaderContainer:before {
     display: none;
   }
@@ -110,13 +113,17 @@ line-height: 24px;
     font-size: 36px;
   }
   .newHeaderLeftColButtons a {
-    display: block;
     margin-bottom: 10px;
     text-align: center;
   }
   .newHeaderRightCol {
     max-height: 500px;
-    overflow: hidden;
+    /*overflow: hidden;*/
+  }
+}
+@media only screen and (max-width: 440px) {
+  .newHeaderLeftColButtons a {
+    display: block;
   }
 }
 </style>
