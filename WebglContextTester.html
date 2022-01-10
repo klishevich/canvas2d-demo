@@ -1,0 +1,35 @@
+<html>
+	<head>
+		<script>
+			const canvases = [];
+			let done;
+
+			function createCanvas() {
+				console.log("create canvas")
+			  const canvas = document.createElement('canvas');
+			  canvas.addEventListener('webglcontextlost', () => {
+				done = true;
+				console.log('num contexts:', canvases.length - 1);
+				document.getElementById("numberContexts").textContent = `${canvases.length - 1}`;
+			  });
+			  const gl = canvas.getContext('webgl');
+			  canvases.push(canvas);
+			}
+
+			const wait = ms => new Promise(resolve => setTimeout(resolve, ms));
+
+			async function main() {
+			  while (!done) {
+				createCanvas();
+				await wait();
+			  }
+			}
+
+			main();
+		</script>
+	</head>
+	<body>
+		<p>Max Number of WebGL Contexts:</p>
+		<p id="numberContexts">.. testing ..</p>
+	</body>
+</html>
